@@ -5,6 +5,7 @@ function aggiornaFraseClick() {
   const fraseClick = document.getElementById("fraseClick");
   const contatore = document.getElementById("contatore");
   contatore.textContent = numeroClick;
+  fraseClick.textContent = `Hai cliccato ${numeroClick} volte.`;
 }
 
 function cambiaTesto() {
