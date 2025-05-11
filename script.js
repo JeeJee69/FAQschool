@@ -2,8 +2,8 @@ let numeroClick = 0;
 const titoloOriginale = "Benvenuto su sito FAQ-School";
 
 function aggiornaFraseClick() {
-  const fraseClick = document.getElementById("fraseClick");
-  fraseClick.textContent = `Hai cliccato ${numeroClick} volte.`;
+  const numero = document.getElementById("numeroClick");
+  numero.textContent = numeroClick;
 }
 
 function cambiaTesto() {
