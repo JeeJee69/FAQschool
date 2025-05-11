@@ -3,7 +3,6 @@ const titoloOriginale = "Benvenuto su sito FAQ-School";
 
 function aggiornaFraseClick() {
   const fraseClick = document.getElementById("fraseClick");
-  contatore.textContent = numeroClick;
   fraseClick.textContent = `Hai cliccato ${numeroClick} volte.`;
 }
 
