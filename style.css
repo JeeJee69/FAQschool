@@ -27,7 +27,7 @@ button {
   margin-bottom: 20px;
 }
 dl {
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
   max-width: 600px;
   padding: 10px;
@@ -35,10 +35,12 @@ dl {
 dt {
   font-weight: bolder;
   margin-top:20px;
+  margin-left: 0;
   color: #0c1959;
 }
 dd {
   margin-left: 0;
   margin-bottom: 10px;
+  margin-left: 0;
   color: #290505;
 }
