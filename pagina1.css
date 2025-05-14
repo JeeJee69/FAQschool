@@ -26,3 +26,38 @@ button {
   cursor: pointer;
   border-radius: 5px;
 }
+.sidebar {
+  position: fixed;         
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #263238; 
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.sidebar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+}
+
+.sidebar a:hover {
+  background-color: #455a64;
+  border-radius: 5px;
+}
+
