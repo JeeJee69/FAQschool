@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Verdana, sans-serif;
-  background-color: #e6dfe1;
+  background-color: #f2b6d2;
   color: #333;
   padding-left: 200px;
 }
@@ -32,9 +32,9 @@ button {
   top: 0;
   width: 200px;
   height: 100vh;
-  background-color: #263238; 
+  background-color: #b41361; 
   padding-top: 20px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 0 5px rgba(93, 0, 79, 0.8);
 }
 
 .sidebar ul {
