@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background-color: #fce4ec;
+  color: #333;
+  padding-left: 200px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+button {
+  background-color: #880e4f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
