@@ -1,4 +1,3 @@
-console.log("sei gay");
 let numeroClick = 0;
 const titoloOriginale = "Benvenuto su sito FAQ-School";
 
