@@ -2,55 +2,86 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sito FAQ Studenti</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!-- Sidebar -->
-   <nav class="sidebar">
-     <ul>
-       <li><a href="index.html">Home</a></li>
-       <li><a href="pagina1.html">Pagina 1</a></li>
-     </ul>
-   </nav>
-  <div class="container">
-    <h1 id="titolo">Benvenuto sul sito FAQ-School</h1>
-    <p class="descrizione">un posto dove si riuniranno tutte quelle persone che si pongono domande alle quali i libri di testo non danno risposte.</p>
-    <button onclick="cambiaTesto()">Clicca qui!</button>
-    <button onclick="resetTitolo()">Resetta Titolo</button>
-    <p id="fraseClick">Quanti click hai fatto= <span id="numeroClick">0</span>.</p>
-    <h2 id="premessa">Questo sito è un WorkInProgress e viene sviluppato con HTML,JS,CSS da un singolo studente</h2>
-  </div>
-  <div class="container">
-    <ol>
-      <li><a
-        href="https://www.treccani.it/enciclopedia/scuola/"
-        target="_blank">Cos'è la Scuola?</a> </li>
-      <li><a
-        href="https://it.wikipedia.org/wiki/Titoli_di_studio_in_Italia"
-        target="_blank">Come si suddividono i percorsi di studio in italia?</a> </li>
-      <li><a
-        href="https://it.wikipedia.org/wiki/Riforma_Gentile"
-        target="_blank">Quale riforma ha creato il nostro sistema scolastico</a> </li>
-    </ol>
-  </div>
-    <div class="faq-esterni">
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="pagina1.html">Pagina 1</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <section class="container">
+      <header>
+        <h1 id="titolo">Benvenuto sul sito FAQ‑School</h1>
+        <p class="descrizione">
+          Un posto dove si riuniranno tutte quelle persone che si pongono domande
+          alle quali i libri di testo non danno risposte.
+        </p>
+      </header>
+
+      <div class="actions">
+        <button onclick="cambiaTesto()">Clicca qui!</button>
+        <button onclick="resetTitolo()">Resetta Titolo</button>
+      </div>
+
+      <p id="fraseClick">
+        Quanti click hai fatto = <span id="numeroClick">0</span>.
+      </p>
+
+      <p id="premessa">
+        Questo sito è un WorkInProgress e viene sviluppato con HTML, JS, CSS
+        da un singolo studente.
+      </p>
+    </section>
+    <section class="container">
+      <h2>Risorse Esterne</h2>
+      <ol>
+        <li>
+          <a href="https://www.treccani.it/enciclopedia/scuola/" target="_blank">
+            Cos'è la Scuola?
+          </a>
+        </li>
+        <li>
+          <a href="https://it.wikipedia.org/wiki/Titoli_di_studio_in_Italia" target="_blank">
+            Come si suddividono i percorsi di studio in Italia?
+          </a>
+        </li>
+        <li>
+          <a href="https://it.wikipedia.org/wiki/Riforma_Gentile" target="_blank">
+            Quale riforma ha creato il nostro sistema scolastico
+          </a>
+        </li>
+      </ol>
+    </section>
+    <section class="container faq-esterni">
+      <h2>Domande Fiscali</h2>
       <dl>
         <dt>Come si fa un 730?</dt>
-        <dd>La risposta viene data dall'agenzia delle entrate 
+        <dd>
+          La risposta viene data dall'Agenzia delle Entrate:  
           <a
-           href="https://www.agenziaentrate.gov.it/portale/come-e-quando-presentare-la-dichiarazione-dei-redditi3"
-           target="_blank">Come e quando</a>.
+            href="https://www.agenziaentrate.gov.it/portale/come-e-quando-presentare-la-dichiarazione-dei-redditi3"
+            target="_blank"
+          >Come e quando</a>.
         </dd>
-       <dt>Come lo scrivo?</dt>
-       <dd>Ci pensa sempre l'agenzia delle entrate
+        <dt>Come lo scrivo?</dt>
+        <dd>
+          Ci pensa sempre l'Agenzia delle Entrate:  
           <a
-           href="https://infoprecompilata.agenziaentrate.gov.it/portale/modello-730-precompilato"
-           target="_blank">Modello 730 precompilato</a>
-       </dd>
+            href="https://infoprecompilata.agenziaentrate.gov.it/portale/modello-730-precompilato"
+            target="_blank"
+          >Modello 730 precompilato</a>.
+        </dd>
       </dl>
-    </div>
+    </section>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
