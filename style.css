@@ -1,77 +1,42 @@
-body {
-  padding-left: 200px;
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, #e0f7fa, #ffffff);
   color: #333;
+  min-height: 100vh;
 }
 
-.container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  text-align: center;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-button {
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.descrizione {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-dl {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 10px;
-}
-dt {
-  font-weight: bolder;
-  margin-top:20px;
-  margin-left: 0;
-  color: #0c1959;
-}
-dd {
-  margin-left: 0;
-  margin-bottom: 10px;
-  color: #290505;
-}
 .sidebar {
-  position: fixed;         
-  left: 0;
-  top: 0;
   width: 200px;
-  height: 100vh;
-  background-color: #263238; 
+  background-color: #263238;
   padding-top: 20px;
+  position: fixed;
+  height: 100vh;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
 .sidebar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  list-style: none;
 }
 
-.sidebar li {
-  margin: 20px 0;
-  text-align: center;
+.sidebar li + li {
+  margin-top: 20px;
 }
 
 .sidebar a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
   display: block;
-  padding: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background 0.2s;
 }
 
 .sidebar a:hover {
@@ -79,3 +44,110 @@ dd {
   border-radius: 5px;
 }
 
+.sidebar a.active {
+  background-color: #455a64;
+  color: #e0f7fa;
+}
+
+.main-content {
+  margin-left: 200px;
+  flex: 1;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.container h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.container header {
+  margin-bottom: 20px;
+}
+
+.container header h1 {
+  font-size: 2rem;
+}
+
+.container header .descrizione {
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.actions {
+  margin: 20px 0;
+}
+
+.actions button {
+  background-color: #880e4f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#fraseClick {
+  margin-top: 12px;
+  font-style: italic;
+}
+
+.container ol {
+  padding-left: 20px;
+}
+
+.container ol li {
+  margin-bottom: 10px;
+}
+
+.faq-esterni dl {
+  margin: 0;
+}
+
+.faq-esterni dt {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #0c1959;
+}
+
+.faq-esterni dd {
+  margin-left: 0;
+  margin-bottom: 10px;
+  color: #290505;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .sidebar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sidebar li + li {
+    margin-top: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+}
