@@ -1,59 +1,41 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
   font-family: Verdana, sans-serif;
   background-color: #f2b6d2;
   color: #333;
-  padding-left: 200px;
+  min-height: 100vh;
 }
 
-.container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-button {
-  background-color: #880e4f;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-top: 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
 .sidebar {
-  position: fixed;         
-  left: 0;
-  top: 0;
   width: 200px;
-  height: 100vh;
-  background-color: #b41361; 
+  background-color: #b41361;
   padding-top: 20px;
+  position: fixed;
+  height: 100vh;
   box-shadow: 2px 0 5px rgba(93, 0, 79, 0.8);
 }
 
 .sidebar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  list-style: none;
 }
 
-.sidebar li {
-  margin: 20px 0;
-  text-align: center;
+.sidebar li + li {
+  margin-top: 20px;
 }
 
 .sidebar a {
+  display: block;
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  display: block;
   padding: 10px;
+  transition: background 0.2s, color 0.2s;
 }
 
 .sidebar a:hover {
@@ -61,3 +43,90 @@ button {
   border-radius: 5px;
 }
 
+.sidebar a.active {
+  background-color: #333;
+  color: #f2b6d2;
+  border-radius: 5px;
+}
+
+.container {
+  margin-left: 200px; 
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.container header {
+  margin-bottom: 20px;
+}
+
+.container header h1 {
+  font-size: 2rem;
+}
+
+.container header .descrizione {
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.container section {
+  margin-bottom: 20px;
+}
+
+.container section button {
+  background-color: #880e4f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container section #risultato {
+  margin-top: 12px;
+  font-style: italic;
+}
+
+.container footer {
+  margin-top: 30px;
+}
+
+.container footer .back {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container footer .back:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    padding: 10px 0;
+  }
+
+  .sidebar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sidebar li + li {
+    margin-top: 0;
+  }
+
+  .container {
+    margin-left: 0;
+    padding: 15px;
+  }
+}
