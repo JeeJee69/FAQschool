@@ -1,4 +1,3 @@
-console.log("script caricato correttamente")
 let numeroClick = 0;
 const titoloOriginale = "Benvenuto su sito FAQ-School";
 
@@ -10,7 +9,7 @@ function aggiornaFraseClick() {
 function cambiaTesto() {
   numeroClick++;
   const titolo = document.getElementById("titolo");
-  titolo.textContent = "perchè l'hai fatto?";
+  titolo.textContent = "perché l'hai fatto?";
   aggiornaFraseClick();
 }
 
